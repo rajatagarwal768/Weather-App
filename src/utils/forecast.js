@@ -19,7 +19,7 @@ const forecast = (latitude, longitude, callback) => {
             //     precip_rain: response.body.current.precip
 
             // });
-            callback(undefined, response.body.current.weather_descriptions[0] + '. It is currently ' + response.body.current.temperature + ' degrees out. It feels like ' + response.body.current.feelslike + ' degrees out. There is a ' + response.body.current.precip*10 + '% chance of rain.');
+            callback(undefined, response.body.current.weather_descriptions[0] + '. It is currently ' + response.body.current.temperature + ' degrees out. It feels like ' + response.body.current.feelslike + ' degrees out. There is a ' + response.body.current.precip*10 + '% chance of rain. The humidity is ' + response.body.current.humidity + '%.');
         }
     })
 };
